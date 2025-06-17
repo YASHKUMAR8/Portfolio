@@ -1,9 +1,35 @@
-.main {
-  margin-left: 110px;
+.app {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
 }
 
+.main {
+  flex: 1;
+  margin-left: 110px;
+  padding: 0 1rem;
+  width: 100%;
+  transition: margin-left 0.3s ease;
+}
+
+/* For tablets and smaller desktops */
 @media screen and (max-width: 1024px) {
   .main {
     margin-left: 0;
+    padding: 0 1.5rem;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 0 1rem;
+  }
+}
+
+/* For very small devices */
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 0 0.75rem;
   }
 }
